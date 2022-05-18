@@ -3,6 +3,7 @@ package hexGame;
 public class Player {
     String name,colour;
     int id,turn,wins;
+    
     public Player(String name,int id) {
         this.name=name;
         this.id=id;
@@ -19,7 +20,7 @@ public class Player {
         this.wins++;
     }
 
-    public void giveturn(int n){
+    public void giveTurn(int n){
         if(n==1){
             this.colour="Blue";
             this.turn=1;

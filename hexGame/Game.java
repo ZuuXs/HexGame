@@ -29,8 +29,8 @@ public class Game {
             p1=p2;
             p2=tempPlayer;
         }
-        p1.giveturn(1);
-        p2.giveturn(2);
+        p1.giveTurn(1);
+        p2.giveTurn(2);
 
         Hex game= new Hex(row, col, p1, p2);
 

@@ -3,18 +3,17 @@ package hexGame;
 public class Hex{
 Player p1,p2;
 int[][] tab;
-int row,col,winner,freeCases;
+int row,col,freeCases;
     
     // Constructor
     public Hex(int row,int col,Player p1, Player p2){
         this.p1=p1;
         this.p2=p2;
-        this.p1.giveturn(1);;
-        this.p2.giveturn(2);;
+        this.p1.giveTurn(1);;
+        this.p2.giveTurn(2);;
         this.row=row;
         this.col=col;
         this.tab= new int[row][col];
-        this.winner=0;
         this.freeCases=row*col;
     }
 
